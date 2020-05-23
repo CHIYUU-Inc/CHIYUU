@@ -2,5 +2,50 @@ baseURL = "https://chiyuu-official.web.app/"
 languageCode = "ja-jp"
 title = "CHIYUU Official"
 theme = "hugo-universal-theme"
+themesDir = "../.."
 defaultContentLanguage = "ja"
 style = "default"
+
+[menu]
+
+# Main menu
+
+[[menu.main]]
+    identifier="home"
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "faq"
+    name = "FAQ"
+    url  = "/faq/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url  = "/contact/"
+    weight = 3
+
+[[menu.topbar]]
+    weight = 1
+    name = "GitHub"
+    url = "https://github.com/rikoroku"
+    pre = "<i class='fab fa-2x fa-github'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Twitter"
+    url = "https://twitter.com/"
+    pre = "<i class='fab fa-2x fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 3
+    name = "Email"
+    url = "mailto:text@example.com"
+    pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[params]
+[params.topbar]
+    enable = true
