@@ -54,3 +54,8 @@ style = "default"
 [params.topbar]
     enable = true
     text = "<p>CHIYUU Official</p>"
+
+
+[params.clients]
+    enable = true
+    title = "Clients"
