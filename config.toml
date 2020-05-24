@@ -58,3 +58,6 @@ style = "default"
 [params.clients]
     enable = true
     title = "Clients"
+
+[params.features]
+    enable = true
