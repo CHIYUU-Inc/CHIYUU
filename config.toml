@@ -51,6 +51,8 @@ style = "default"
     logo_small = "img/logo-small.png"
     customCSS = ["/css/custom.css"]
 
+    copyright = "Copyright (c) 2017 - 2020, CHIYUU; all rights reserved."
+
 [params.topbar]
     enable = true
     text = "<p>CHIYUU Official</p>"
