@@ -1,0 +1,8 @@
+@media (min-width: 784px) {
+  .owl-wrapper {
+    margin: auto;
+  }
+  .owl-item:first-child {
+    margin-left: 12vw;
+  }
+}
