@@ -28,24 +28,6 @@ style = "default"
     url  = "/contact/"
     weight = 3
 
-[[menu.topbar]]
-    weight = 1
-    name = "GitHub"
-    url = "https://github.com/rikoroku"
-    pre = "<i class='fab fa-2x fa-github'></i>"
-
-[[menu.topbar]]
-    weight = 2
-    name = "Twitter"
-    url = "https://twitter.com/"
-    pre = "<i class='fab fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 3
-    name = "Email"
-    url = "mailto:text@example.com"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
-
 [params]
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
@@ -54,10 +36,6 @@ style = "default"
     copyright = "Copyright (c) 2017 - 2020, CHIYUU; all rights reserved."
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-
-[params.topbar]
-    enable = true
-    text = "<p>CHIYUU Official</p>"
 
 [params.clients]
     enable = true
