@@ -53,6 +53,8 @@ style = "default"
 
     copyright = "Copyright (c) 2017 - 2020, CHIYUU; all rights reserved."
 
+    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+
 [params.topbar]
     enable = true
     text = "<p>CHIYUU Official</p>"
