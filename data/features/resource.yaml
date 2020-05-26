@@ -1,0 +1,5 @@
+weight: 2
+name: "システム開発リソースの提供"
+icon: "fas fa-code"
+url: ""
+description: "個人から企業様まで、システム開発のリソースを提供致します。GolangやRuby, PHPなどのサーバーサイドからAngular, JavaScriptなどのクライアントサイドの開発までサポート致します。"
