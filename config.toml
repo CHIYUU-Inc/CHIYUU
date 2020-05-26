@@ -33,6 +33,9 @@ style = "default"
     logo_small = "img/logo-small.png"
     customCSS = ["/css/custom.css"]
 
+    defaultKeywords = ["弘前市", "システム開発", "WordPress"]
+    defaultDescription = "青森県弘前市でWebシステム開発に関するソリューションを提供している智勇(CHIYUU)のHPです。"
+
     copyright = "Copyright (c) 2017 - 2020, CHIYUU; all rights reserved."
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
