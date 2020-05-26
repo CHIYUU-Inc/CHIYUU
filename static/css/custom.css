@@ -1,9 +1,9 @@
-@media (min-width: 784px) {
+@media (min-width: 769px) {
   .owl-wrapper {
     margin: auto;
   }
   .owl-item:first-child {
-    margin-left: 12vw;
+    margin-left: 25%;
   }
 }
 
