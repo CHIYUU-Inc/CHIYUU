@@ -2,8 +2,25 @@
   .customers .owl-wrapper {
     margin: auto;
   }
+
+  .testimonials .owl-item:first-child {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 784px) {
   .customers .owl-item:first-child {
     margin-left: 25%;
+  }
+
+  .testimonials .owl-item:first-child {
+    margin-left: 50%;
+  }
+}
+
+@media (min-width: 1006px) {
+  .testimonials .owl-item:first-child {
+    margin-left: 75%;
   }
 }
 
