@@ -46,3 +46,10 @@ style = "default"
 
 [params.carousel]
     enable = true
+
+[params.see_more]
+    enable = true
+    icon = "far fa-file-alt"
+    title = "実績紹介"
+    subtitle = "現在作成中です。近日公開予定。"
+
