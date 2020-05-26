@@ -10,3 +10,7 @@
 .pull-right {
   display: none;
 }
+
+.box-simple h3 {
+  text-transform: initial;
+}
