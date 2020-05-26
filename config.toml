@@ -56,3 +56,7 @@ style = "default"
     title = "実績紹介"
     subtitle = "現在作成中です。近日公開予定。"
 
+[params.testimonials]
+    enable = true
+    title = "お客様の声"
+
