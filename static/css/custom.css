@@ -1,8 +1,8 @@
 @media (min-width: 769px) {
-  .owl-wrapper {
+  .customers .owl-wrapper {
     margin: auto;
   }
-  .owl-item:first-child {
+  .customers .owl-item:first-child {
     margin-left: 25%;
   }
 }
@@ -13,4 +13,12 @@
 
 .box-simple h3 {
   text-transform: initial;
+}
+
+#contact .col-md-4 {
+  width: 0;
+}
+
+#contact .col-md-8 {
+  width: 100%;
 }
