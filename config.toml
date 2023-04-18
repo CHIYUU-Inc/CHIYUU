@@ -18,16 +18,10 @@ googleAnalytics = "UA-86186566-18"
     weight = 1
 
 [[menu.main]]
-    identifier = "faq"
-    name = "FAQ"
-    url  = "/faq/"
-    weight = 2
-
-[[menu.main]]
     identifier = "contact"
     name = "Contact"
     url  = "/contact/"
-    weight = 3
+    weight = 2
 
 [params]
     logo = "img/logo.png"
