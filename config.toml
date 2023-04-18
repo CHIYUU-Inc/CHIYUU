@@ -31,7 +31,7 @@ googleAnalytics = "UA-86186566-18"
     defaultKeywords = ["弘前市", "システム開発", "WordPress"]
     defaultDescription = "青森県弘前市でWebシステム開発に関するソリューションを提供している智勇(CHIYUU)のHPです。"
 
-    copyright = "Copyright (c) 2017 - 2020, CHIYUU; all rights reserved."
+    copyright = "Copyright (c) 2017 - 2023, CHIYUU; all rights reserved."
 
     about_us = "<p>本サイトは屋号が智勇(CHIYUU)の事業主のオフィシャルホームページとなります。</p>"
 
