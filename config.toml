@@ -18,10 +18,16 @@ googleAnalytics = "UA-86186566-18"
     weight = 1
 
 [[menu.main]]
+    identifier = "experience"
+    name = "実績"
+    url  = "/experience/"
+    weight = 2
+
+[[menu.main]]
     identifier = "contact"
     name = "お問い合わせ"
     url  = "/contact/"
-    weight = 2
+    weight = 3
 
 [params]
     logo = "img/logo.png"
@@ -49,7 +55,9 @@ googleAnalytics = "UA-86186566-18"
     enable = true
     icon = "far fa-file-alt"
     title = "実績紹介"
-    subtitle = "現在作成中です。近日公開予定。"
+    subtitle = "2017年1月に開業して以来、多種多様な実績があります。"
+    link_url = "/experience"
+    link_text = "詳しくはこちらより確認ください。"
 
 [params.testimonials]
     enable = true

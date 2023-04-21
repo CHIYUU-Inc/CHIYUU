@@ -42,3 +42,40 @@
 #contact .col-md-8 {
   width: 100%;
 }
+
+#content {
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  #content table {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .experiences .work {
+    min-width: 410px;
+  }
+}
+
+.experiences th {
+  background: #38a7bb;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.experiences tbody td {
+  white-space: break-spaces;
+  vertical-align: middle;
+}
+
+.experiences .work-title {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.experiences .link {
+  min-width: 65px;
+}
