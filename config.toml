@@ -55,3 +55,28 @@ googleAnalytics = "UA-86186566-18"
     enable = true
     title = "お客様の声"
 
+[params.topbar]
+    enable = true
+    text = """<p class="hidden-sm hidden-xs">info@chiyuu-official.com にて連絡お受けしております。</p>
+      <p class="hidden-md hidden-lg">
+        <a href="mailto:info@chiyuu-official.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+      </p>
+      """
+
+[[menu.topbar]]
+    weight = 1
+    name = "GitHub"
+    url = "https://github.com/CHIYUU-Official"
+    pre = "<i class='fab fa-2x fa-github'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Twitter"
+    url = "https://twitter.com/rikoroku"
+    pre = "<i class='fab fa-2x fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Email"
+    url = "mailto:info@chiyuu-official.com"
+    pre = "<i class='fas fa-2x fa-envelope'></i>"
