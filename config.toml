@@ -12,8 +12,8 @@ googleAnalytics = "UA-86186566-18"
 # Main menu
 
 [[menu.main]]
-    identifier="home"
-    name = "Home"
+    identifier="top"
+    name = "Top"
     url  = "/"
     weight = 1
 
