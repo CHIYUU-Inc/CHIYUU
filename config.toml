@@ -19,7 +19,7 @@ googleAnalytics = "UA-86186566-18"
 
 [[menu.main]]
     identifier = "contact"
-    name = "Contact"
+    name = "お問い合わせ"
     url  = "/contact/"
     weight = 2
 
