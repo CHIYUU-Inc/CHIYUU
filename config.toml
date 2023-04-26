@@ -1,6 +1,6 @@
-baseURL = "https://chiyuu-official.web.app/"
+baseURL = "https://chiyuu-inc.com/"
 languageCode = "ja-jp"
-title = "CHIYUU Official"
+title = "CHIYUU's Official Site"
 theme = "hugo-universal-theme"
 themesDir = "../.."
 defaultContentLanguage = "ja"
@@ -65,9 +65,9 @@ googleAnalytics = "UA-86186566-18"
 
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">info@chiyuu-official.com にて連絡お受けしております。</p>
+    text = """<p class="hidden-sm hidden-xs">info@chiyuu-inc.com にて連絡お受けしております。</p>
       <p class="hidden-md hidden-lg">
-        <a href="mailto:info@chiyuu-official.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:info@chiyuu-inc.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
 
@@ -86,5 +86,5 @@ googleAnalytics = "UA-86186566-18"
 [[menu.topbar]]
     weight = 2
     name = "Email"
-    url = "mailto:info@chiyuu-official.com"
+    url = "mailto:info@chiyuu-inc.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"

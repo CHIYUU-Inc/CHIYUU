@@ -14,3 +14,5 @@ hugo.linux
 
 # Generated files by firebase
 /.firebase/*
+
+.env
