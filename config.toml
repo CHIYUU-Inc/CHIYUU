@@ -65,9 +65,9 @@ googleAnalytics = "UA-86186566-18"
 
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">info@chiyuu-inc.com にて連絡お受けしております。</p>
+    text = """<p class="hidden-sm hidden-xs"><a href="/contact">お問い合わせ</a>にて連絡お受けしております。</p>
       <p class="hidden-md hidden-lg">
-        <a href="mailto:info@chiyuu-inc.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+        <a href="/contact" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
 
@@ -82,9 +82,3 @@ googleAnalytics = "UA-86186566-18"
     name = "Twitter"
     url = "https://twitter.com/rikoroku"
     pre = "<i class='fab fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 2
-    name = "Email"
-    url = "mailto:info@chiyuu-inc.com"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
