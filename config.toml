@@ -1,6 +1,6 @@
-baseURL = "https://chiyuu-inc.com/"
+baseURL = "https://chiyuu-official.com/"
 languageCode = "ja-jp"
-title = "CHIYUU's Official Site"
+title = "Official site of CHIYUU"
 theme = "hugo-universal-theme"
 themesDir = "../.."
 defaultContentLanguage = "ja"
