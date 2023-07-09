@@ -70,12 +70,11 @@
   vertical-align: middle;
 }
 
-.experiences .work-title {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-
 .experiences .link {
   min-width: 65px;
+}
+
+.experiences .work-body {
+  margin-bottom: 10px;
+  display: block;
 }
