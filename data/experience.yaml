@@ -4,7 +4,7 @@
   work:
     title: 葬儀の複数社相見積もりサービス
     body: []
-  tech:
+  tech: HTML5/CSS3, JavaScript, Ruby, Ruby on Rails, Vue.js, TypeScript, GitHub Actions, AWS, Docker, MySQL
   link:
 - 'no': 15
   term: 2021/6/1~2022/2/28
@@ -22,7 +22,7 @@
   work:
     title: 高齢者向け宅配弁当の検索・資料請求サービスのリニューアル開発
     body: []
-  tech:
+  tech: HTML5/CSS3, JavaScript, Ruby, Ruby on Rails, GitHub Actions, AWS, Docker, MySQL
   link:
 - 'no': 13
   term: 2020/5/1~2020/9/30
