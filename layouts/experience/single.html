@@ -46,7 +46,7 @@
                                 {{ range .Site.Data.experience }}
                                   <tr>
                                     <td>{{ .no }}</td>
-                                    <td>{{ .term }}</td>
+                                    <td>{{ .term }}<br>({{ .length }})</td>
                                     <td>{{ .work.title }}</td>
                                     <td class="text-left">{{ range .work.body -}}
                                       <span class="work-body">- {{ . }}</span>{{- end }}
