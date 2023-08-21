@@ -18,9 +18,9 @@ googleAnalytics = "UA-86186566-18"
     weight = 1
 
 [[menu.main]]
-    identifier = "experience"
-    name = "実績"
-    url  = "/experience/"
+    identifier = "about_me"
+    name = "開発者について"
+    url  = "https://rikoroku.github.io/"
     weight = 2
 
 [[menu.main]]
@@ -54,10 +54,11 @@ googleAnalytics = "UA-86186566-18"
 [params.see_more]
     enable = true
     icon = "far fa-file-alt"
-    title = "実績紹介"
+    title = "開発者紹介"
     subtitle = "2017年1月に開業して以来、多種多様な実績があります。"
-    link_url = "/experience"
+    link_url = "https://rikoroku.github.io/"
     link_text = "詳しくはこちらより確認ください。"
+    link_blank = true
 
 [params.testimonials]
     enable = true
