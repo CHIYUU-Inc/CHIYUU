@@ -5,7 +5,7 @@ theme = "hugo-universal-theme"
 themesDir = "../.."
 defaultContentLanguage = "ja"
 style = "default"
-googleAnalytics = "UA-86186566-18"
+googleAnalytics = "G-DKSSVMSQ9V"
 
 [menu]
 
