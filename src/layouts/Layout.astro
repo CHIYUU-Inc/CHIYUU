@@ -1,51 +1,43 @@
 ---
+import PageLoader from '../components/PageLoader.astro';
+import Navbar from '../components/Navbar.astro';
+import ScrollTop from '../components/ScrollTop.astro';
+import Footer from '../components/Footer.astro';
+
 interface Props {
 	title: string;
+	description: string;
 }
 
 const { title } = Astro.props;
+// WIP
+const { description = "宮城県仙台市で...株式会社CHIYUU" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ja" data-bs-theme="light">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title} | 株式会社CHIYUU</title>
+
+		<link rel="stylesheet" media="screen" href="/assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
 	</head>
 	<body>
-		<slot />
+		<PageLoader />
+		<main class="page-wrapper">
+			<Navbar />
+			<slot />
+			<ScrollTop />
+		</main>
+		<Footer />
+    <script is:inline src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script is:inline src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script is:inline src="/assets/js/theme.min.js"></script>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
