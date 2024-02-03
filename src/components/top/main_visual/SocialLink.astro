@@ -1,0 +1,13 @@
+---
+interface Props {
+  url: string;
+  platform: string;
+}
+
+const { url } = Astro.props;
+const { platform } = Astro.props;
+---
+
+<a href={url} class={`btn btn-icon btn-secondary btn-${platform} rounded-circle me-2`} target="_blank" rel="noopener" aria-label={platform}>
+  <i class={`bx bxl-${platform}`}></i>
+</a>

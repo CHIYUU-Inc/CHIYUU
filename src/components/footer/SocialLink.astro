@@ -1,0 +1,15 @@
+---
+interface Props {
+  url: string;
+  name: string;
+}
+
+const { url } = Astro.props;
+const { name } = Astro.props;
+---
+
+<li class="nav-item">
+  <a href={url} target="_blank" rel="noopener" class="nav-link d-inline-block px-0 pt-1 pb-2">
+    {name}
+  </a>
+</li>

@@ -1,0 +1,80 @@
+---
+import Item from "./main_visual/Item.astro";
+import SocialLink from "./main_visual/SocialLink.astro";
+import items from '../../data/top/main_visutal_items.json';
+import socialLinks from '../../data/top/social_links.json';
+
+const swiperOptions = {
+  effect: 'fade',
+  speed: 500,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '#hero-prev',
+    nextEl: '#hero-next'
+  }
+};
+const mainImage = '/assets/img/landing/main-visual.jpg';
+---
+
+<section class="jarallax bg-dark py-xxl-5" data-jarallax data-speed="0.4" data-bs-theme="dark">
+  <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
+  <div class="jarallax-img" style={`background-image: url(${mainImage});`}></div>
+  <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
+
+    <!-- Slider controls (Prev / next) -->
+    <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2" aria-label="Previous">
+      <i class="bx bx-chevron-left fs-1"></i>
+    </button>
+    <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2" aria-label="Next">
+      <i class="bx bx-chevron-right fs-1"></i>
+    </button>
+
+    <!-- Slider -->
+    <div class="container text-center py-xl-5">
+      <div class="row justify-content-center pt-lg-5">
+        <div class="col-xl-8 col-lg-9 col-md-10 col-11">
+          <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options={JSON.stringify(swiperOptions)}>
+            <div class="swiper-wrapper">
+              {
+                items.map((item) => (
+                  <Item
+                    title={item.title}
+                    description={item.description}
+                    btnLink={item.btnLink}
+                    btnText={item.btnText}
+                  />
+                ))
+              }
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
+    <div class="d-flex mb-4 mb-sm-0">
+      {
+        socialLinks.map((link) => (
+          <SocialLink
+            url={link.url}
+            platform={link.platform}
+          />
+        ))
+      }
+    </div>
+    <a href="#" class="nav-link px-0">
+      実績を見る
+      <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+    </a>
+  </div>
+</section>

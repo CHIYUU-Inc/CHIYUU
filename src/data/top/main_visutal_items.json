@@ -1,0 +1,20 @@
+[
+  {
+    "title": "お客様のビジネスに\n最適なITソリューション",
+    "description": "お客様のビジネスをより良いものにするために、幅広い高品質なITサービスを提供しています。",
+    "btnLink": "#",
+    "btnText": "Start your project"
+  },
+  {
+    "title": "Award-Winning Software Development",
+    "description": "We build complex web, desktop and mobile applications. With us you get quality software and perfect service every time.",
+    "btnLink": "#",
+    "btnText": "View case studies"
+  },
+  {
+    "title": "24/7 Tech & Business Support",
+    "description": "We ensure lifetime support of all applications we've built. Our support department is a team of professionals who will assist you 24/7.",
+    "btnLink": "#",
+    "btnText": "Work with us"
+  }
+]
