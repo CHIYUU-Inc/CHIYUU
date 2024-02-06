@@ -1,23 +1,11 @@
 ---
-interface Props {
-	title: string;
-	description: string;
-  btnLink: string;
-  btnText: string;
-}
-
-const { title } = Astro.props;
-const { description } = Astro.props;
-const { btnLink } = Astro.props;
-const { btnText } = Astro.props;
+interface Props { text: string; klass?: string; }
+const { text } = Astro.props;
+const { klass } = Astro.props;
 ---
 
-<div class="swiper-slide">
-  <h2 class="display-2 from-start mb-lg-4">{title}</h2>
-  <div class="from-end">
-    <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">{description}</p>
-  </div>
-  <div class="scale-up delay-1">
-    <a href={btnLink} class="btn btn-primary shadow-primary btn-lg">{btnText}</a>
+<div class="d-flex align-items-center justify-content-center bg-secondary rounded-3" style="min-height: 176px; backdrop-filter: blur(6px);">
+  <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
+    <span class={`hero-animation-fade text-white ${klass}`}>{ text }</span>
   </div>
 </div>

@@ -1,80 +1,99 @@
 ---
-import Item from "./main_visual/Item.astro";
-import SocialLink from "./main_visual/SocialLink.astro";
-import items from '../../data/top/main_visutal_items.json';
-import socialLinks from '../../data/top/social_links.json';
-
-const swiperOptions = {
-  effect: 'fade',
-  speed: 500,
-  autoplay: {
-    delay: 5500,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  navigation: {
-    prevEl: '#hero-prev',
-    nextEl: '#hero-next'
-  }
-};
-const mainImage = '/assets/img/landing/main-visual.jpg';
+import ItemGroup from './main_visual/ItemGroup.astro';
+import Item from './main_visual/Item.astro';
 ---
 
-<section class="jarallax bg-dark py-xxl-5" data-jarallax data-speed="0.4" data-bs-theme="dark">
-  <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
-  <div class="jarallax-img" style={`background-image: url(${mainImage});`}></div>
-  <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
-
-    <!-- Slider controls (Prev / next) -->
-    <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2" aria-label="Previous">
-      <i class="bx bx-chevron-left fs-1"></i>
-    </button>
-    <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2" aria-label="Next">
-      <i class="bx bx-chevron-right fs-1"></i>
-    </button>
-
-    <!-- Slider -->
-    <div class="container text-center py-xl-5">
-      <div class="row justify-content-center pt-lg-5">
-        <div class="col-xl-8 col-lg-9 col-md-10 col-11">
-          <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options={JSON.stringify(swiperOptions)}>
-            <div class="swiper-wrapper">
-              {
-                items.map((item) => (
-                  <Item
-                    title={item.title}
-                    description={item.description}
-                    btnLink={item.btnLink}
-                    btnText={item.btnText}
-                  />
-                ))
-              }
+<section class="position-relative d-flex align-items-center min-vh-100 py-5 overflow-hidden">
+  <span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+  <div class="container position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3" data-bs-theme="dark">
+    <div class="row gy-5">
+      <div class="col-xl-5 col-lg-6">
+        <div class="position-relative zindex-5 text-lg-start text-center">
+          <h1 class="display-4 mb-4 pb-lg-3 pb-md-2">最新の<span class="text-emphasis display-2">IT技術</span>を用いお客様のビジネスを<span class="text-emphasis display-2">加速</span>します</h1>
+          <p class="mb-4 pb-lg-3 pb-md-2">
+            <span class="me-2 text-light">Providing IT solutions to make your business better.</span>
+            <!-- <img src="/assets/img/top/clutch-rating.png" width="193" alt="Clutch rating" class="mt-n1"> -->
+          </p>
+          <a href="#" class="btn btn-lg btn-primary">提供しているサービスを確認</a>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-xl-1">
+        <div class="position-relative ms-xl-0 ms-lg-4">
+          <div class="position-absolute top-50 start-50 translate-middle ratio ratio-1x1" style="width: 125%; max-width: 49.75rem;">
+            <div class="p-md-0 p-5">
+              <img src="/assets/img/top/hero-bg.png" alt="Shape" class="hero-animation-spin p-md-0 p-5">
             </div>
-
-            <!-- Pagination (bullets) -->
-            <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+          </div>
+          <div class="position-relative row row-cols-sm-2 row-cols-1 gx-xl-4 gx-lg-3 gx-md-4 gx-3">
+            <div class="col">
+              <ItemGroup>
+                <Item text="AIを用いた高品質・低コストなシステム開発"/>
+                <Item text="クラウドコンピューティングを用いた障害/負荷に強いサーバー運用"/>
+              </ItemGroup>
+            </div>
+            <div class="col mt-sm-5 mt-2 pt-sm-5">
+              <ItemGroup>
+                <Item text="HP/LP/Webシステム/モバイルアプリなど幅広く対応" klass="hero-animation-delay-1"/>
+                <Item text="アジャイルを用いたお客様に寄り添う開発体制" klass="hero-animation-delay-3"/>
+              </ItemGroup>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
-    <div class="d-flex mb-4 mb-sm-0">
-      {
-        socialLinks.map((link) => (
-          <SocialLink
-            url={link.url}
-            platform={link.platform}
-          />
-        ))
-      }
-    </div>
-    <a href="#" class="nav-link px-0">
-      実績を見る
-      <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
-    </a>
-  </div>
 </section>
+
+<style>
+  section {
+    background-color: rgb(0 0 0 / 70%);
+    background-image: url('/assets/img/top/main-visual.jpg');
+    background-blend-mode: darken;
+  }
+
+  .text-emphasis {
+    color: #08F;
+  }
+</style>
+
+<style is:global>
+  @keyframes hero-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes hero-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hero-animation-spin {
+    animation: hero-spin 35s linear infinite;
+  }
+
+  /* Fade animation */
+  @keyframes hero-fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+  @keyframes hero-fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+  .hero-animation-fade {
+    animation: hero-fade 4s ease-in infinite;
+  }
+
+  .hero-animation-delay-1,
+  .hero-animation-delay-2,
+  .hero-animation-delay-3 {
+    opacity: 0;
+  }
+  .hero-animation-delay-1 { animation-delay: .75s; }
+  .hero-animation-delay-2 { animation-delay: 1.5s; }
+  .hero-animation-delay-3 { animation-delay: 2s; }
+</style>

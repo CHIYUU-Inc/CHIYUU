@@ -10,7 +10,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-// WIP
 const { description = "宮城県仙台市で...株式会社CHIYUU" } = Astro.props;
 ---
 
@@ -23,9 +22,8 @@ const { description = "宮城県仙台市で...株式会社CHIYUU" } = Astro.pro
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title} | 株式会社CHIYUU</title>
-
 		<link rel="stylesheet" media="screen" href="/assets/vendor/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css">
 		<link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
 	</head>
 	<body>
@@ -36,8 +34,14 @@ const { description = "宮城県仙台市で...株式会社CHIYUU" } = Astro.pro
 		</main>
 		<Footer />
 		<ScrollTop />
-    <script is:inline src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
-    <script is:inline src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script is:inline src="/assets/vendor/rellax/rellax.min.js"></script>
+		<script is:inline src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script is:inline src="/assets/js/theme.min.js"></script>
 	</body>
 </html>
+
+<style is:global>
+	body {
+		font-family: 'Noto Sans JP', sans-serif;
+	}
+</style>

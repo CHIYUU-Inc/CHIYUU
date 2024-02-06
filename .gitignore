@@ -22,3 +22,4 @@ pnpm-debug.log*
 
 .firebase/*
 node_modules
+public/assets/vendor/*
