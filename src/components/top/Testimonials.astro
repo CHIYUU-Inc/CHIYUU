@@ -1,0 +1,69 @@
+---
+import NavItem from './testimonials/NavItem.astro'
+import TabPane from './testimonials/TabPane.astro'
+import contents from '../../data/top/testimonials.json';
+---
+
+<section class="py-4" id="testimonials">
+  <div class="container py-2 py-md-4 py-lg-5">
+    <div class="row justify-content-center text-center pt-xl-2 pb-4 mb-1 mb-lg-3">
+      <h2 class="h2 mb-0 mb-md-3">お客様の声</h2>
+    </div>
+    <div class="row gy-4 gx-md-4 gx-3">
+      <div class="col-lg-4 col-sm-5 order-sm-1 order-2">
+        <ul class="nav nav-tabs flex-column" role="tablist">
+          {
+            contents.map((content) => (
+              <NavItem
+                id={content.id}
+                name={content.name}
+                position={content.position}
+                avatar={content.avatar}
+              />
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="col-sm-7 offset-lg-1 order-sm-2 order-1">
+        <div class="tab-content ps-lg-0 ps-md-4">
+          {
+            contents.map((content) => (
+              <TabPane
+                id={content.id}
+                title={content.title}
+                body={content.body}
+                rating={content.rating}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="module">
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.js-nav-link')
+    const tabPanes = document.querySelectorAll('.js-tab-pane')
+
+    function activateTab(tabId) {
+      navLinks.forEach((navLink) => {
+        navLink.classList.toggle('active', navLink.getAttribute('data-tab-pane-id') === tabId);
+      });
+
+      tabPanes.forEach((tabPane) => {
+        tabPane.classList.toggle('active', tabPane.getAttribute('data-tab-pane-id') === tabId);
+        tabPane.classList.toggle('show', tabPane.getAttribute('data-tab-pane-id') === tabId);
+      });
+    }
+
+    navLinks.forEach((navLink) => {
+      navLink.addEventListener('click', () => {
+        const tabId = navLink.getAttribute('data-tab-pane-id');
+        activateTab(tabId);
+      });
+    });
+  })
+</script>
