@@ -1,0 +1,76 @@
+---
+const swiperOptions = {
+  "spaceBetween": 24,
+  "autoplay": true,
+  "breakpoints": {
+    "0": {
+      "slidesPerView": 2
+    },
+    "500": {
+      "slidesPerView": 3
+    },
+    "768": {
+      "slidesPerView": 4
+    },
+    "1200": {
+      "slidesPerView": 6
+    }
+  },
+  "pagination": {
+    "el": ".swiper-pagination",
+    "clickable": true
+  }
+}
+---
+
+<section class="bg-secondary pb-4 pb-lg-5">
+  <div class="container">
+    <div class="swiper mb-xl-3 text-center" data-swiper-options={JSON.stringify(swiperOptions)}>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="mb-3">
+            <img src="/assets/img/top/icons/technologies/js.svg" alt="Logo" class="d-dark-mode-none d-inline-block">
+          </div>
+          <span class="text-body">Javascript</span>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="mb-3">
+            <img src="/assets/img/top/icons/technologies/node.svg" alt="Logo" class="d-dark-mode-none d-inline-block">
+          </div>
+          <span class="text-body">Node.JS</span>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="mb-3">
+            <img src="/assets/img/top/icons/technologies/react.svg" alt="Logo" class="d-dark-mode-none d-inline-block">
+          </div>
+          <span class="text-body">React</span>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="mb-3">
+            <img src="/assets/img/top/icons/technologies/php.svg" alt="Logo" class="d-dark-mode-none d-inline-block">
+          </div>
+          <span class="text-body">PHP</span>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="mb-3">
+            <img src="/assets/img/top/icons/technologies/angular.svg" alt="Logo" class="d-dark-mode-none d-inline-block">
+          </div>
+          <span class="text-body">Angular</span>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="mb-3">
+            <img src="/assets/img/top/icons/technologies/python.svg" alt="Logo" class="d-dark-mode-none d-inline-block">
+          </div>
+          <span class="text-body">Python</span>
+        </div>
+      </div>
+
+      <div class="swiper-pagination position-static mt-4 pt-lg-3 pt-2"></div>
+    </div>
+  </div>
+</section>
