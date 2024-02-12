@@ -1,0 +1,26 @@
+---
+import ItemDev from './services/ItemDev.astro'
+import ItemLegacy from './services/ItemLegacy.astro'
+import ItemSupport from './services/ItemSupport.astro'
+import ItemConsulting from './services/ItemConsulting.astro'
+---
+
+<section class="bg-secondary pt-4 pb-1" id="services">
+  <div class="container py-2 py-md-4 py-lg-5">
+    <div class="row justify-content-center text-center pt-xl-2 pb-4 mb-1 mb-lg-3">
+      <div class="col-xl-6 col-lg-7 col-md-8 col-sm-11">
+        <h2 class="mb-4 h2">サービス内容</h2>
+        <p class="text-muted mb-0">
+          ビジネスの成長を支援するための様々なサービスを提供しています。<br />
+          詳しくは以下の内容をご確認ください。
+        </p>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2">
+      <ItemDev />
+      <ItemLegacy />
+      <ItemSupport />
+      <ItemConsulting />
+    </div>
+  </div>
+</section>
