@@ -9,10 +9,13 @@ import Item from './main_visual/Item.astro';
     <div class="row gy-5">
       <div class="col-xl-5 col-lg-6">
         <div class="position-relative zindex-5 text-lg-start text-center">
-          <h1 class="display-4 mb-4 pb-lg-3 pb-md-2">最新の<span class="text-emphasis display-2">IT技術</span>を用いお客様のビジネスを<span class="text-emphasis display-2">加速</span>します</h1>
+          <h1 class="display-4 mb-4 pb-lg-3 pb-md-2 text-lg-nowrap">
+            最新の<span class="text-emphasis display-2">IT技術</span>で<br class="d-sm-none d-lg-block">お客様のビジネスを<br class="d-sm-none d-lg-block"><span class="text-emphasis display-2">加速</span>します
+          </h1>
           <p class="mb-4 pb-lg-3 pb-md-2">
-            <span class="me-2 text-light">Providing IT solutions to make your business better.</span>
-            <!-- <img src="/assets/img/top/clutch-rating.png" width="193" alt="Clutch rating" class="mt-n1"> -->
+            <span class="me-2 text-light h6">
+              最新のIT技術と実績を活かし、お客様のデジタルトランスフォーメーション(DX)を戦略立案から実行までワンストップでサポートします。
+            </span>
           </p>
           <a href="#" class="btn btn-lg btn-primary">提供しているサービスを確認</a>
         </div>
@@ -46,7 +49,7 @@ import Item from './main_visual/Item.astro';
 
 <style>
   section {
-    background-color: rgb(0 0 0 / 70%);
+    background-color: rgb(0 0 0 / 25%);
     background-image: url('/assets/img/top/main-visual.jpg');
     background-blend-mode: darken;
   }
