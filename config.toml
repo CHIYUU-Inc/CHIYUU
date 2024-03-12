@@ -20,7 +20,7 @@ googleAnalytics = "G-DKSSVMSQ9V"
 [[menu.main]]
     identifier = "about_me"
     name = "開発者について"
-    url  = "https://rikoroku.github.io/"
+    url  = "https://tmhr94.github.io/"
     weight = 2
 
 [[menu.main]]
@@ -37,7 +37,7 @@ googleAnalytics = "G-DKSSVMSQ9V"
     defaultKeywords = ["宮城県", "仙台市", "システム開発", "受託", "アプリ"]
     defaultDescription = "宮城県仙台市でITソリューションを提供している智勇(CHIYUU)のHPです。"
 
-    copyright = "Copyright (c) 2017 - 2023, CHIYUU; all rights reserved."
+    copyright = "Copyright (c) 2017 - 2024, CHIYUU; all rights reserved."
 
     about_us = "<p>本サイトは屋号が智勇(CHIYUU)の事業主のオフィシャルホームページとなります。</p>"
 
@@ -56,7 +56,7 @@ googleAnalytics = "G-DKSSVMSQ9V"
     icon = "far fa-file-alt"
     title = "開発者紹介"
     subtitle = "2017年1月に開業して以来、多種多様な実績があります。"
-    link_url = "https://rikoroku.github.io/"
+    link_url = "https://tmhr94.github.io/"
     link_text = "詳しくはこちらより確認ください。"
     link_blank = true
 
@@ -81,5 +81,5 @@ googleAnalytics = "G-DKSSVMSQ9V"
 [[menu.topbar]]
     weight = 2
     name = "Twitter"
-    url = "https://twitter.com/rikoroku"
+    url = "https://twitter.com/tmhr94"
     pre = "<i class='fab fa-2x fa-twitter'></i>"
