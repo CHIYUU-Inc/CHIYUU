@@ -15,3 +15,21 @@ import Comapny from '../components/top/Company.astro';
   <Testimonials />
   <Comapny />
 </Layout>
+
+<script type="module">
+  // anchor link scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    if (anchor.getAttribute('href') === '#') return;
+
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      const navbarHeight = document.getElementById('js-navbar-menu').clientHeight;
+      window.scrollTo({
+        top: (target.getClientRects()[0].top - navbarHeight) + window.scrollY,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
