@@ -20,6 +20,7 @@ const { description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <link rel="stylesheet" media="screen" href="/assets/vendor/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
   </head>
   <body>
@@ -28,6 +29,6 @@ const { description } = Astro.props;
       <slot />
       <Footer canShowItems={false} />
     </main>
-    <script is:inline src="/assets/js/theme.min.js"></script>
+    <script type="module" src="/assets/js/theme.min.js"></script>
   </body>
 </html>

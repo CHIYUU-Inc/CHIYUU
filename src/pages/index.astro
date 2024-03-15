@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import MainLayout from '../layouts/Main.astro';
 import MainVisual from '../components/top/MainVisual.astro';
 import Services from '../components/top/Services.astro';
 import Testimonials from '../components/top/Testimonials.astro';
@@ -7,7 +7,7 @@ import Comapny from '../components/top/Company.astro';
 import Contact from '../components/top/Contact.astro';
 ---
 
-<Layout
+<MainLayout
   title="株式会社CHIYUU - 最適なITソリューションを提供"
   description="株式会社CHIYUUはお客様のビジネスに最適なITソリューションを提供する会社です。最新のIT技術を用いてお客様のビジネスを成功に導きます。"
 >
@@ -16,7 +16,7 @@ import Contact from '../components/top/Contact.astro';
   <Testimonials />
   <Comapny />
   <Contact />
-</Layout>
+</MainLayout>
 
 <script type="module">
   // anchor link scroll
