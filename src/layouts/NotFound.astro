@@ -1,0 +1,33 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <Navbar canShowItems={false} isBarSticky={false} />
+      <slot />
+      <Footer canShowItems={false} />
+    </main>
+    <script is:inline src="/assets/js/theme.min.js"></script>
+  </body>
+</html>
