@@ -1,4 +1,5 @@
 ---
+import Item from './top/navbar/Item.astro';
 interface Props {
   canShowItems?: boolean;
   isBarSticky?: boolean;
@@ -21,18 +22,10 @@ const { isBarSticky = true } = Astro.props;
       { canShowItems && (
         <div class="offcanvas-body">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="#services" class="nav-link">サービス内容</a>
-            </li>
-            <li class="nav-item">
-              <a href="#testimonials" class="nav-link">お客様の声</a>
-            </li>
-            <li class="nav-item">
-              <a href="#company" class="nav-link">企業情報</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">お問い合わせ</a>
-            </li>
+            <Item href="#services" text="サービス内容" />
+            <Item href="#testimonials" text="お客様の声" />
+            <Item href="#company" text="企業情報" />
+            <Item href="#contact" text="お問い合わせ" />
           </ul>
         </div>
       ) }
