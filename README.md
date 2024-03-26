@@ -1,5 +1,8 @@
 # Chiyuu
 
+<!-- https://github.com/withastro/prettier-plugin-astro -->
+<!--  -->
+
 ```bash
 # To start dev server
 make serve
