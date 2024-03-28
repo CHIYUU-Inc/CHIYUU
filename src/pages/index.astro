@@ -1,0 +1,37 @@
+---
+import MainLayout from '../layouts/Main.astro';
+import MainVisual from '../components/top/MainVisual.astro';
+import Services from '../components/top/Services.astro';
+import Testimonials from '../components/top/Testimonials.astro';
+import Comapny from '../components/top/Company.astro';
+import Contact from '../components/top/Contact.astro';
+---
+
+<MainLayout
+  title="株式会社CHIYUU - 最適なITソリューションを提供"
+  description="株式会社CHIYUUはお客様のビジネスに最適なITソリューションを提供する会社です。最新のIT技術を用いてお客様のビジネスを成功に導きます。"
+>
+  <MainVisual />
+  <Services />
+  <Testimonials />
+  <Comapny />
+  <Contact />
+</MainLayout>
+
+<script type="module">
+  // anchor link scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    if (anchor.getAttribute('href') === '#') return;
+
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      const navbarHeight = document.getElementById('js-navbar-menu').clientHeight;
+      window.scrollTo({
+        top: (target.getClientRects()[0].top - navbarHeight) + window.scrollY,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>

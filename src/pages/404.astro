@@ -1,0 +1,35 @@
+---
+import SimpleLayout from '../layouts/Simple.astro';
+---
+
+<SimpleLayout
+  title="株式会社CHIYUU - 最適なITソリューションを提供"
+  description="株式会社CHIYUUはお客様のビジネスに最適なITソリューションを提供する会社です。最新のIT技術を用いてお客様のビジネスを成功に導きます。"
+>
+  <section class="container d-flex flex-column align-items-center position-relative zindex-5 py-5">
+    <div class="text-center pt-5 pb-3 mt-5">
+      <div class="parallax mx-auto" style="max-width: 574px;">
+        <div class="parallax-layer" data-depth="-0.15">
+          <img src="assets/img/404/layer01.png" alt="Layer">
+        </div>
+        <div class="parallax-layer" data-depth="0.12">
+          <img src="assets/img/404/layer02.png" alt="Layer">
+        </div>
+        <div class="parallax-layer zindex-5" data-depth="-0.12">
+          <img src="assets/img/404/layer03.png" alt="Layer">
+        </div>
+      </div>
+
+      <h1 class="visually-hidden">404</h1>
+      <h2 class="display-5">404 Page Not Found</h2>
+      <p class="fs-xl pb-3 pb-md-0 mb-md-5">
+        お客様がアクセスしようとしたページは見つかりませんでした。<br>
+        お探しのページは、移動または削除された可能性があります。
+      </p>
+      <a href="/" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
+        <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
+        トップページへ戻る
+      </a>
+    </div>
+  </section>
+</SimpleLayout>

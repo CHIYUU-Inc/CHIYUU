@@ -1,0 +1,11 @@
+---
+interface Props { text: string; klass?: string; }
+const { text } = Astro.props;
+const { klass } = Astro.props;
+---
+
+<div class="d-flex align-items-center justify-content-center bg-secondary rounded-3" style="min-height: 176px; backdrop-filter: blur(6px);">
+  <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
+    <span class={`hero-animation-fade text-white ${klass}`}>{ text }</span>
+  </div>
+</div>

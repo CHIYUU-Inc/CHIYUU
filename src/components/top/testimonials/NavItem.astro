@@ -1,0 +1,24 @@
+---
+interface Props { id: string; name: string; position: string; avatar: string; }
+const { id } = Astro.props;
+const { name } = Astro.props;
+const { position } = Astro.props;
+const { avatar } = Astro.props;
+const avtiveClass = id === '1' ? 'active' : '';
+---
+
+<li class="nav-item mb-3">
+  <div class={`js-nav-link nav-link flex-md-row flex-sm-column align-items-md-center align-items-sm-start align-items-center p-md-4 p-3 rounded-3 fw-normal ${avtiveClass}`} data-tab-pane-id=`${id}`>
+    <img src={`/assets/img/top/testimonials/${avatar}`} width="56" alt="Avatar" class="rounded-circle me-md-3 me-sm-0 me-3 mb-md-0 mb-sm-2">
+    <div>
+      <span class="d-block mb-0 fs-lg fw-semibold">{ name }</span>
+      { position }
+    </div>
+  </div>
+</li>
+
+<style>
+  .nav-link {
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,14 @@
+---
+interface Props { th: string; td: string; }
+const { th } = Astro.props;
+const { td } = Astro.props;
+---
+
+<tr>
+  <th scope="row">{ th }</th>
+  <td>
+    <span class="d-inline-block py-3">
+      <Fragment set:html={td} />
+    </span>
+  </td>
+</tr>

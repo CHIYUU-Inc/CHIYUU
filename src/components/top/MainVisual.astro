@@ -1,0 +1,102 @@
+---
+import ItemGroup from './main_visual/ItemGroup.astro';
+import Item from './main_visual/Item.astro';
+---
+
+<section class="position-relative d-flex align-items-center min-vh-100 py-5 overflow-hidden">
+  <span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+  <div class="container position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3" data-bs-theme="dark">
+    <div class="row gy-5">
+      <div class="col-xl-5 col-lg-6">
+        <div class="position-relative zindex-5 text-lg-start text-center">
+          <h1 class="display-4 mb-4 pb-lg-3 pb-md-2 text-lg-nowrap">
+            最新の<span class="text-emphasis display-2">IT技術</span>で<br class="d-sm-none d-lg-block">お客様のビジネスを<br class="d-sm-none d-lg-block"><span class="text-emphasis display-2">加速</span>します
+          </h1>
+          <p class="mb-4 pb-lg-3 pb-md-2">
+            <span class="me-2 text-light h6">
+              最新のIT技術と実績を活かし、お客様のデジタルトランスフォーメーション(DX)を戦略立案から実行までワンストップでサポートします。
+            </span>
+          </p>
+          <a href="#services" class="btn btn-lg btn-primary">提供しているサービスを確認</a>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-xl-1">
+        <div class="position-relative ms-xl-0 ms-lg-4">
+          <div class="position-absolute top-50 start-50 translate-middle ratio ratio-1x1" style="width: 125%; max-width: 49.75rem;">
+            <div class="p-md-0 p-5">
+              <img src="/assets/img/top/hero-bg.png" alt="Shape" class="hero-animation-spin p-md-0 p-5">
+            </div>
+          </div>
+          <div class="position-relative row row-cols-sm-2 row-cols-1 gx-xl-4 gx-lg-3 gx-md-4 gx-3">
+            <div class="col">
+              <ItemGroup>
+                <Item text="AIを用いた高品質・低コストなシステム開発"/>
+                <Item text="クラウドコンピューティングを用いた障害/負荷に強いサーバー運用"/>
+              </ItemGroup>
+            </div>
+            <div class="col mt-sm-5 mt-2 pt-sm-5">
+              <ItemGroup>
+                <Item text="HP/LP/Webシステム/モバイルアプリなど幅広く対応" klass="hero-animation-delay-1"/>
+                <Item text="アジャイルを用いたお客様に寄り添う開発体制" klass="hero-animation-delay-3"/>
+              </ItemGroup>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: rgb(0 0 0 / 25%);
+    background-image: url('/assets/img/top/main-visual.jpg');
+    background-blend-mode: darken;
+  }
+
+  .text-emphasis {
+    color: #08F;
+  }
+</style>
+
+<style is:global>
+  @keyframes hero-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes hero-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hero-animation-spin {
+    animation: hero-spin 35s linear infinite;
+  }
+
+  /* Fade animation */
+  @keyframes hero-fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+  @keyframes hero-fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+  .hero-animation-fade {
+    animation: hero-fade 4s ease-in infinite;
+  }
+
+  .hero-animation-delay-1,
+  .hero-animation-delay-2,
+  .hero-animation-delay-3 {
+    opacity: 0;
+  }
+  .hero-animation-delay-1 { animation-delay: .75s; }
+  .hero-animation-delay-2 { animation-delay: 1.5s; }
+  .hero-animation-delay-3 { animation-delay: 2s; }
+</style>
